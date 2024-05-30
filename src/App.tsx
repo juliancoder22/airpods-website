@@ -1,5 +1,6 @@
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
+import Reviews from "./components/Reviews/Reviews";
 import "./index.css";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
       <Header />
       <Hero />
+      <Reviews />
     </>
   );
 }
