@@ -3,7 +3,7 @@ import { Fade } from "react-awesome-reveal";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col p-6 items-center justify-center h-screen">
+    <div className="flex flex-col p-6 items-center justify-center h-screen mb-10">
       <div className="flex flex-col items-center justify-center text-center max-w-full mx-auto mt-6">
         <Fade direction="down" triggerOnce duration={2000}>
           <img src={AirPodsImg} alt="airpods" className="mx-auto mb-4" />
