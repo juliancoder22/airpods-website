@@ -4,7 +4,7 @@ import { Fade } from "react-awesome-reveal";
 
 const QualitySound = () => {
   return (
-    <div className="flex flex-col justify-center items-center h-screen bg-slate-900">
+    <div className="flex flex-col justify-center items-center h-screen bg-slate-900 section">
       <Fade direction="down" triggerOnce duration={1500}>
         <h1 className="text-slate-100 text-5xl font-bold">
           Trendy designs with <br /> better sound quality.
