@@ -12,11 +12,11 @@ function App() {
     <>
       <Header />
       <Hero />
-      {/* <AirpodsInfo />
+      <AirpodsInfo />
       <Reviews />
       <QualitySound />
       <Cards />
-      <Footer /> */}
+      <Footer />
     </>
   );
 }
