@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <header className="flex justify-between items-center absolute top-0 w-full p-4 bg-white">
-      <span>Airpods Website</span>
+      <span className="font-semibold text-xl tracking-widest">Airpods</span>
       <nav className="flex justify-center gap-10 items-center pl-12">
         <a href="#" className="font-semibold text-stone-900">
           Demos

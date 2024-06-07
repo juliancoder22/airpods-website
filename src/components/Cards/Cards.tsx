@@ -6,8 +6,8 @@ import AirpodsBackground from "../../assets/BGbackground.png";
 
 const Cards = () => {
   return (
-    <div className="flex flex-col items-center justify-center ">
-      <div className="h-screen flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center">
+      <div className="h-screen w-full flex flex-col items-center justify-center section">
         <Fade direction="down" triggerOnce duration={2000}>
           <h1 className="text-5xl font-bold">Get your airpod now.</h1>
           <p className="text-center font-normal text-lg mt-10">
