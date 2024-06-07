@@ -4,7 +4,7 @@ import { Fade } from "react-awesome-reveal";
 
 const Reviews = () => {
   return (
-    <div className="flex h-screen bg-indigo-600 justify-end">
+    <div className="flex h-screen bg-indigo-600 justify-end section">
       <Fade direction="left" triggerOnce duration={2500}>
         <div className="flex flex-col p-60">
           <h1 className="font-bold text-5xl text-slate-50">

@@ -1,3 +1,4 @@
+import AirpodsInfo from "./components/AirpodsInfo/AirpodsInfo";
 import Footer from "./components/Footer/Footer";
 import Cards from "./components/Cards/Cards";
 import Header from "./components/Header/Header";
@@ -10,11 +11,12 @@ function App() {
   return (
     <>
       <Header />
-      {/* <Hero />
+      <Hero />
+      <AirpodsInfo />
       <Reviews />
       <QualitySound />
       <Cards />
-      <Footer /> */}
+      <Footer />
     </>
   );
 }

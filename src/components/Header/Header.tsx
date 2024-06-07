@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <header className="flex justify-between items-center absolute top-0 w-full p-4 bg-white">
-      <span className="font-semibold text-xl">Airpods Website</span>
+      <span className="font-semibold text-xl tracking-widest">Airpods</span>
       <nav
         className={`${
           isMobileMenuOpen
