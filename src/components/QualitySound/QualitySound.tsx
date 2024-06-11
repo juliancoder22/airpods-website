@@ -6,7 +6,7 @@ const QualitySound = () => {
   return (
     <div className="flex flex-col justify-center items-center h-screen bg-slate-900 section">
       <Fade direction="down" triggerOnce duration={1500}>
-        <h1 className="text-slate-100 text-5xl font-bold">
+        <h1 className="text-slate-100 text-center text-5xl font-bold">
           Trendy designs with <br /> better sound quality.
         </h1>
         <p className="text-slate-300 text-lg text-center mt-8">
