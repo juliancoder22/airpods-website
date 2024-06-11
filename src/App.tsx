@@ -1,3 +1,4 @@
+import AirpodsInfo from "./components/AirpodsInfo/AirpodsInfo";
 import Footer from "./components/Footer/Footer";
 import Cards from "./components/Cards/Cards";
 import Header from "./components/Header/Header";
@@ -11,6 +12,7 @@ function App() {
     <>
       <Header />
       <Hero />
+      <AirpodsInfo />
       <Reviews />
       <QualitySound />
       <Cards />
