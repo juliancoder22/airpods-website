@@ -6,16 +6,18 @@ import AirpodsBackground from "../../assets/BGbackground.png";
 
 const Cards = () => {
   return (
-    <div className="flex flex-col items-center justify-center ">
-      <div className="h-screen flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center pt-20 md:pt-0">
+      <div className="min-h-screen pb-20 md:pb-0 flex flex-col items-center justify-center">
         <Fade direction="down" triggerOnce duration={2000}>
-          <h1 className="text-5xl font-bold">Get your airpod now.</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-center">
+            Get your airpod now.
+          </h1>
           <p className="text-center font-normal text-lg mt-10">
-            We share common trends and strategies for <br /> improving your
-            rental income.
+            Discover the superior sound quality and <br /> unbeatable comfort of
+            the new AirPods.
           </p>
         </Fade>
-        <div className="flex items-center justify-center gap-20 mt-32">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-20 mt-32">
           <Fade direction="left" triggerOnce duration={2000}>
             <div className="flex flex-col items-center gap-8">
               <img src={Airpods1} alt="airpods image" />
@@ -57,8 +59,7 @@ const Cards = () => {
           </Fade>
         </div>
       </div>
-
-      <img src={AirpodsBackground} alt="" className="w-full h-screen" />
+      <img src={AirpodsBackground} alt="" className="w-full md:h-screen" />
     </div>
   );
 };
