@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import "./Header.css";
 
 const Header = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -10,46 +11,71 @@ const Header = () => {
   };
 
   return (
-    <header className="flex justify-between items-center absolute top-0 w-full p-4 bg-white">
+    <header className="flex justify-between items-center w-full p-4 bg-white shadow-md">
       <span className="font-semibold text-xl tracking-widest">Airpods</span>
       <nav
         className={`${
           isMobileMenuOpen
-            ? "flex flex-col justify-center items-center fixed top-0 left-0 w-full h-full bg-white z-50"
+            ? "fixed top-0 left-0 w-full h-full bg-white z-50 flex flex-col justify-center items-center menu-enter"
             : "hidden"
-        } md:flex md:flex-row md:static md:gap-10 md:pl-12`}
+        } md:flex md:flex-row md:static md:gap-8 md:pl-12`}
       >
         <a
-          href="#"
-          className="font-semibold text-stone-900 text-xl md:text-lg md:mt-0 mt-4"
+          href="#demos"
+          className="font-semibold text-stone-900 text-lg md:text-xl md:mt-0 mt-4"
         >
           Demos
         </a>
         <a
-          href="#"
-          className="font-semibold text-stone-900 text-xl md:text-lg md:mt-0 mt-4"
+          href="#pages"
+          className="font-semibold text-stone-900 text-lg md:text-xl md:mt-0 mt-4"
         >
           Pages
         </a>
         <a
-          href="#"
-          className="font-semibold text-stone-900 text-xl md:text-lg md:mt-0 mt-4"
+          href="#support"
+          className="font-semibold text-stone-900 text-lg md:text-xl md:mt-0 mt-4"
         >
           Support
         </a>
         <a
-          href="#"
-          className="font-semibold text-stone-900 text-xl md:text-lg md:mt-0 mt-4"
+          href="#contact"
+          className="font-semibold text-stone-900 text-lg md:text-xl md:mt-0 mt-4"
         >
           Contact
         </a>
+        <a
+          href="#about"
+          className="font-semibold text-stone-900 text-lg md:text-xl md:mt-0 mt-4"
+        >
+          About
+        </a>
+        <div className="mt-8 flex flex-col items-center md:hidden">
+          <p className="text-stone-900 text-center mb-4">
+            Explore AirPods and their amazing features.
+          </p>
+          <button className="bg-blue-700 hover:bg-blue-800 text-white font-semibold py-2 px-4 rounded-lg mb-4">
+            Buy now - Starting at $99
+          </button>
+          <a href="#contact" className="text-blue-700 font-semibold">
+            Contact Us
+          </a>
+        </div>
       </nav>
-      <button className="bg-blue-700 hover:bg-blue-800 text-white font-semibold py-4 px-6 rounded-lg mb-4 text-sm hidden md:block">
-        Buy now - Starting at $99
-      </button>
-      <button className="text-black md:hidden z-50" onClick={toggleMobileMenu}>
-        <FontAwesomeIcon icon={isMobileMenuOpen ? faTimes : faBars} size="lg" />
-      </button>
+      <div className="flex items-center ">
+        <button className="bg-blue-700 hover:bg-blue-800 text-white font-semibold py-4 px-6 rounded-lg mb-4 text-sm hidden md:block">
+          Buy now - Starting at $99
+        </button>
+        <button
+          className="text-black md:hidden z-50 ml-4"
+          onClick={toggleMobileMenu}
+        >
+          <FontAwesomeIcon
+            icon={isMobileMenuOpen ? faTimes : faBars}
+            size="lg"
+          />
+        </button>
+      </div>
     </header>
   );
 };

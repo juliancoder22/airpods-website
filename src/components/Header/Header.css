@@ -1,0 +1,25 @@
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-out-right {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.menu-enter {
+  animation: slide-in-right 0.5s forwards;
+}
+
+.menu-exit {
+  animation: slide-out-right 0.5s forwards;
+}
